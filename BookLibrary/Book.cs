@@ -17,6 +17,9 @@ namespace BookLibrary
         public bool IsBorrowed { get; set; }
         public DateTime BorrowedTime { get; set; }
         public User BorrowedBy { get; set; }
+        public object Id { get; }
+        public object Releasedate { get; }
+        public BookGenre Genre1 { get; }
 
         public Book(int iD, string name, string Author, DateTime releaseDate, BookGenre genre)
         {
@@ -26,6 +29,16 @@ namespace BookLibrary
             Genre = genre;
 
         }
+
+        public Book(object id, string name, object releasedate, string author, BookGenre genre)
+        {
+            Id = id;
+            Name = name;
+            Releasedate = releasedate;
+            Author = author;
+            Genre1 = genre;
+        }
+
         public override string ToString()
         {
             if (IsBorrowed)
@@ -50,6 +63,5 @@ namespace BookLibrary
         Comedy,
         Cartoon,
         Comix
-
     }
 }

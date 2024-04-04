@@ -36,11 +36,31 @@ namespace BookLibrary_GUI
             {
                 ListView_AllBooks.Items.Add(book.ToString());
             }
+            ListView_AllUsers.Items.Clear();
+          foreach(var user in LibraryKNM.Users)
+           {
+              ListView_AllUsers.Items.Add(user.ToString());
 
+           }
         }
-           
-       
 
+        private void Window_AddNewBook(object sender, EventArgs e)
+        {
+            var window = new Window_AddBook();
+            window.ShowDialog();
+            Refresh();
+        }
+        private void Window_AddNewUser(object sender, EventArgs e)
+        { var window = new Window_AddUser();
+            window.ShowDialog();
+            Refresh(); 
+        }
 
+        private void borrowbook_Click(object sender, RoutedEventArgs e)
+        {
+            var window = new Window1();
+            window.ShowDialog();
+            Refresh();
+        }
     }
 }

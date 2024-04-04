@@ -11,7 +11,7 @@ namespace BookLibrary
         public static List<string> BookNames { get; set; } = new List<string>() { "Harry Potter", "Pan prsteňov", "Hobbit", "Witcher", "Mala morská víla" };
         public static List<string> Authors { get; set; } = new List<string>() { "J. K. Rowling", "J. R. R. Tolkien", "J. R. R. Tolkien", " Jožko Pekný", "Matej Jožkoviec" };
         public static List<string> FirstNames { get; set; } = new List<string>() { "MIchal", "Hugo", "Pavol", "Stano", "Peter" };
-        public static List<string> LastNames { get; set; } = new List<string>() { " Hnusný", "Lokaj", "Sovík", "Miková", "Dudešek" };
+        public static List<string> LastNames { get; set; } = new List<string>() { " Hnusný", "Lokaj", "Sovík", "Mikový", "Dudešek" };
         public static List<string> Cities { get; set; } = new List<string>() { "ZA", "CA", "KNM", "KE", "MT" };
 
         public static List<Book>GenerateBooks()
